@@ -1,0 +1,24 @@
+[package]
+name = "wasm"
+version = "0.1.0"
+authors = ["Gitai <i@gitai.me>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3.23"
+wasm-bindgen = "0.2.46"
+
+[dependencies.web-sys]
+version = "0.3.23"
+features = [
+  'Document',
+  'Element',
+  'EventTarget',
+  'HtmlElement',
+  'MouseEvent',
+  'Node',
+  'Window',
+]
